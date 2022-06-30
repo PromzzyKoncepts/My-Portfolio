@@ -1,6 +1,6 @@
-# TEMPLATE 2: MOBILE VERSION
+# PROMISE OKECHUKWU: PORTFOLIO
 
-> This is the Mobile Version of my portfolio designed with template 2.
+> This is a Mobile version of the portfolio website for the Microverse exercise.
 
 ## Built With
 
@@ -9,9 +9,8 @@
 
 ## Live Demo:
 
-Take a glance at the portfolio screenshot to see a sample of the project
-
-Please visit: ![Screenshot (24)](https://user-images.githubusercontent.com/69632681/176631028-2eb86f09-3afa-473f-998c-1f4ca832874e.png)
+[live demolink](https://promzzykoncepts.github.io/Template-2-Mobile-Version/)
+Take a glance at the portfolio live demo to see a sample of the project
 
 ## Author
 
