@@ -52,7 +52,14 @@ body {
 
 .nav-span {
   padding-top: 10px;
-  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.nav-span > a {
+  text-decoration: none;
+  color: #f4f4f4;
+  font-size: 0.9rem;
 }
 
 .first-section {

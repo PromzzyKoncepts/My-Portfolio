@@ -7,7 +7,13 @@
 - HTML
 - CSS
 
-## Authors
+## Live Demo:
+
+Take a glance at the portfolio screenshot to see a sample of the project
+
+Please visit: ![Screenshot (24)](https://user-images.githubusercontent.com/69632681/176631028-2eb86f09-3afa-473f-998c-1f4ca832874e.png)
+
+## Author
 
 👤 **PROMISE OKECHUKWU**
 
