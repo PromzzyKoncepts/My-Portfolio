@@ -18,20 +18,18 @@ body {
 
 .wrapper {
   max-height: 90vh;
-  width: 375px;
   display: flex;
   flex-direction: column;
   background-color: inherit;
-  margin: 5vh auto 5vh auto;
 }
 
 .header-wrapper {
-  background-image: url(../images/illustration-header-mobile.png);
+  background-image: url(./images/illustration-header-mobile.png);
   background-color: #1c1a19;
   background-repeat: no-repeat;
   color: white;
-  background-position-x: 225px;
-  background-position-y: 420px;
+  background-size: auto;
+  background-position: right bottom;
 }
 
 .nav-links {
@@ -156,6 +154,8 @@ img:hover {
   padding-left: 24px;
   margin-block-start: 0;
   margin-block-end: 0;
+  font-family: 'inter', sans-serif;
+  font-style: normal;
 }
 
 .line {
@@ -242,7 +242,7 @@ img:hover {
   text-align: center;
   text-decoration: none;
   border: none;
-  background-color: #8f3c00;
+  background-color: #ff6b00;
   margin-left: 24px;
   transition: all 0.8s ease-out 8ms;
 }
@@ -250,7 +250,7 @@ img:hover {
 .project-section-img1,
 .project-section-img2,
 .project-section-img3 {
-  background-image: url(images/Img-placeholder.png);
+  background-image: url(./images/Img-placeholder.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -274,7 +274,7 @@ img:hover {
 }
 
 .project-section-img {
-  background-image: url(images/Img-placeholder.png);
+  background-image: url(./images/Img-placeholder.png);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
@@ -353,11 +353,11 @@ img:hover {
   top: 0%;
   width: 100%;
   color: #fff;
-  background-color: #8f3c00;
+  background-color: #ff6b00;
   height: 48px;
   text-align: center;
   font-family: 'Inter', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
   margin-top: 0;
@@ -460,8 +460,6 @@ img:hover {
   text-align: center;
   font-weight: 400;
   font-size: 72px;
-
-  /* padding-top: 120px; */
   line-height: 88px;
   color: #ff6b00;
   letter-spacing: 0.37px;
@@ -496,9 +494,10 @@ img:hover {
 .rotate,
 .square,
 .circle {
-  background-color: #e05304;
+  background-color: #ff6b00;
   width: 20px;
   height: 20px;
+  margin: 0 4px;
 }
 
 .rotate {
