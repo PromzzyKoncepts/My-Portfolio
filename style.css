@@ -5,7 +5,7 @@ html {
 }
 
 body {
-  background-color: #c7c7c7;
+  background-color: #f4f4f4;
   padding: 0;
   margin: 0;
   overflow-y: auto;
@@ -98,11 +98,12 @@ body {
   line-height: 24px;
 }
 
-.header-icons {
+.header-icons, .header-icons2 {
   margin-bottom: 160px;
 }
 
-.header-icons ul {
+.header-icons 
+ul {
   display: flex;
   justify-content: flex-start;
   padding-inline-start: 0;
@@ -111,6 +112,17 @@ body {
 .header-icons ul li {
   list-style: none;
   padding-left: 20px;
+}
+.header-icons2>ul>li {
+  list-style: none;
+  padding: 10px 10px;
+  /* background-color: #282828; */
+  filter: invert(100%);
+}
+.header-icons2 ul {
+  display: flex;
+  justify-content: center;
+  padding-inline-start: 0;
 }
 
 .header-icons ul li a {
@@ -192,15 +204,15 @@ img:hover {
 }
 
 .work-section-ul ul {
-  display: flex;
-  align-items: center;
+  float: center;
   border: none;
-  width: 70%;
+  width: 90%;
   margin-left: 24px;
   padding: 20px 0 2px 0;
 }
 
 .work-section-ul ul li {
+  display: inline-block;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -506,4 +518,34 @@ img:hover {
 
 .circle {
   border-radius: 100%;
+}
+
+.contact{
+  /* display:flex; */
+  /* flex-direction: row; */
+  /* flex-flow: row wrap; */
+  /* justify-content: flex-start; */
+  padding: 25px;
+  text-align: center;
+  font-family: 'inter';
+  /* max-width: 100vh; */
+
+}
+
+.contact-text>h2{
+  font-weight: bolder;
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+#text-area, #email, #fullname {
+  width: 100%;
+  padding: 20px;
+  background: none;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+.hr{
+  background-color: #282828;
+  padding: 0.08pt;
 }
