@@ -10,6 +10,18 @@ body {
   margin: 0;
   overflow-y: auto;
 }
+button{
+  background: #F55800;;
+}
+button:hover{
+  background: #FFF5E1;
+}
+button:active{
+  background: #E05304;  
+}
+button:disabled{
+  background: #F4F1F0;
+}
 
 .icon {
   float: right;
@@ -279,11 +291,11 @@ img:hover {
   align-items: center;
 }
 
-.project-btn1:hover {
+/* .project-btn1:hover {
   background: #fff5e1;
   border: 1px solid #c25100;
   color: #c25100;
-}
+} */
 
 .project-section-img {
   background-image: url(./images/Img-placeholder.png);
@@ -379,11 +391,11 @@ img:hover {
   transform: translateY(-33px);
 }
 
-.project-btn2:hover {
+/* .project-btn2:hover {
   background: #fff5e1;
   border: 1px solid #c25100;
   color: #c25100;
-}
+} */
 
 .project-section-img .paragraph {
   font-family: 'Inter', sans-serif;
