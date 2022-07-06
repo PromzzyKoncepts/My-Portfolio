@@ -34,6 +34,7 @@ button:disabled{
   display: flex;
   flex-direction: column;
   background-color: inherit;
+  width: 100%;
 }
 
 .header-wrapper {
@@ -53,6 +54,10 @@ button:disabled{
   flex: 1 1 auto;
 }
 
+.img2 {
+  display: none;
+}
+
 .header-section {
   display: flex;
   flex-direction: row;
@@ -62,7 +67,7 @@ button:disabled{
 }
 
 .nav-span {
-  padding-top: 10px;
+  padding-top: 13px;
   font-family: sans-serif;
   font-weight: bold;
 }
@@ -186,6 +191,10 @@ img:hover {
   font-style: normal;
 }
 
+.shift {
+  margin-left: 30px;
+}
+
 .line {
   background-color: #b8adad;
   height: 1px;
@@ -233,20 +242,23 @@ img:hover {
   font-weight: 400;
   font-size: 14px;
   line-height: 44px;
-  padding-right: 25px;
+
+  /* padding-right: 25px; */
   list-style: none;
   text-align: center;
 }
 
 .btn {
-  padding: 10px;
+  padding: 5px 10px;
   margin-right: 9px;
   background-color: #fff;
-  height: 47px;
+
+  /* height: 47px; */
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
-  box-sizing: border-box;
+
+  /* box-sizing: border-box; */
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
@@ -257,9 +269,9 @@ img:hover {
   justify-content: center;
 }
 
-/* .btn:active {
-  color: white;
-} */
+#project-button1 {
+  margin-left: 24px;
+}
 
 .project-btn1 {
   padding: 10px;
@@ -271,9 +283,7 @@ img:hover {
   text-decoration: none;
   border: none;
   background-color: #ff6b00;
-  margin-left: 24px;
-
-  /* transition: all 0.8s ease-out 8ms; */
+  transition: all 0.8s ease-out 8ms;
 }
 
 .project-section-img1,
@@ -437,6 +447,12 @@ img:hover {
   color: white;
 }
 
+@media screen and (max-width: 786px) {
+  .desktop {
+    display: none;
+  }
+}
+
 .project-section-img1 .paragraph {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -479,8 +495,6 @@ img:hover {
   background-repeat: no-repeat;
   background-position: right bottom;
   color: white;
-
-  /* margin-top: 120px; */
   background-position-y: 20rem;
   box-sizing: border-box;
 }
@@ -564,8 +578,6 @@ img:hover {
   padding: 25px;
   text-align: center;
   font-family: 'Inter', sans-serif;
-
-  /* max-width: 100vh; */
 }
 
 .contact-text > h2 {
@@ -576,7 +588,8 @@ img:hover {
 
 #text-area,
 #email,
-#fullname {
+#fullname,
+#full-name {
   width: 100%;
   padding: 20px;
   background: none;
@@ -585,6 +598,255 @@ img:hover {
   margin-bottom: 10px;
 }
 
+.fullname {
+  display: none;
+}
+
 hr {
   flex-direction: column;
+}
+
+/* This area is for desktop */
+@media screen and (min-width: 786px) {
+  body {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .wrapper {
+    width: 100%;
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav-span {
+    padding-bottom: 12px;
+  }
+
+  .nav-links,
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0 10px;
+    list-style: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .menubtn {
+    display: none;
+  }
+
+  .header-wrapper {
+    background-image: url(./Images/illustration-header.png);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-position-y: 3.5rem;
+    background-size: 37%;
+  }
+
+  .header-section {
+    align-items: center;
+  }
+
+  .first-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    background-color: #1c1a19;
+    width: 50%;
+  }
+
+  .header-icons > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    padding: 30px;
+    padding-top: 45vh;
+  }
+
+  .header-icons,
+  ul li {
+    padding: 10px;
+  }
+
+  .header-smaller-text {
+    margin-bottom: -3px;
+  }
+
+  .work-section-heading {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    margin-left: -10px;
+  }
+
+  .work-section-heading > .line {
+    width: 170%;
+    margin-top: 34px;
+    margin-left: -60px;
+  }
+
+  .work-section-heading > h2 {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  #work-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    /* padding: 0px 20px; */
+  }
+
+  .work-section {
+    padding: 0 50px;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .img2 {
+    display: block;
+  }
+
+  .work-section-texts {
+    width: 100%;
+  }
+
+  .project-section {
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    justify-content: center;
+    margin-bottom: 7rem;
+  }
+
+  .about-me {
+    background-image: url(./images/illustration-about-me.png);
+
+    /* margin-top: 120px; */
+    background-position-y: 10rem;
+    background-size: 35%;
+    box-sizing: border-box;
+  }
+
+  .about-heading {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    max-width: 34%;
+    line-height: 0.5rem;
+
+    /* justify-content: space-around; */
+    margin-left: 100px;
+  }
+
+  .about-me p {
+    text-align: left;
+
+    /* color: red; */
+    margin-left: 2px;
+  }
+
+  .about-me-text {
+    padding-top: 24px;
+    margin-bottom: 0;
+  }
+
+  .line1 {
+    width: 86%;
+    margin: 8rem auto;
+  }
+
+  .about-category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 80px;
+  }
+
+  .about-category ul li {
+    text-align: left;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .language {
+    margin-top: -50px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 5rem;
+  }
+
+  .contact-text {
+    width: 30%;
+    text-align: left;
+    font-size: 18px;
+  }
+
+  .fullname {
+    display: flex;
+  }
+
+  .hr {
+    width: 230%;
+  }
+
+  .div-form {
+    width: 230%;
+  }
+
+  #contact-button {
+    display: block;
+    justify-content: flex-start;
+  }
+
+  /* project 1 starts */
+  .no-display {
+    display: none;
+  }
+
+  #display {
+    margin-top: 374.5px;
+  }
+
+  #project1 {
+    background-image: url(./images/img1.png);
+  }
+
+  /* project 1 ends */
+
+
+  /* project 2 starts */
+  .mobile {
+    display: none;
+  }
+
+  .project-section-img1 {
+    background-image: url(./images/img2.png);
+  }
+
+  .project-section-img3 {
+    background-image: url(./images/img3.png);
+  }
+
+  .btns {
+    margin-left: -50px;
+  }
 }

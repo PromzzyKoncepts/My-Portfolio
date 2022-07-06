@@ -20,13 +20,13 @@
         <!-- navbar-section -->
         <header class="header-section">
           <span class="nav-span"><a href="#">Promise Okechukwu</a></span>
-          <span><a href="#"><img src="./images/Enabled.png" class="#" alt="#"></a></span>
+          <span><a href="#"><img src="./images/Enabled.png" class="menubtn" alt="#"></a></span>
           <ul class="nav-links">
             <li>
               <span><a href="#">Portfolio</a></span>
               <span><a href="#">About</a></span>
-              <span><a href="#">contact</a></span>
-              <span><a href="#"><img src="./images/mail.png" alt="mail logo"></a></span>
+              <span><a href="#">Contact</a></span>
+              <span><a href="#"><img src="images/Union.png" alt="mail logo"></a></span>
             </li>
           </ul>
         </header>
@@ -34,7 +34,7 @@
         <section class="first-section">
           <div class="header-intro">
             <h1 class="header-text">
-              Hey There.
+              Hey There. <br>
               I’m Promise
             </h1>
             <h2 class="header-smaller-text"> I am a Software Developer </h2>
@@ -65,11 +65,14 @@
         <header class="work-section-heading">
           <h2>My Recent Works</h2>
           <div class="line"></div>
-          <!-- <hr class="hr"> -->
+          <!-- or add <hr class="hr"> -->
         </header>
-        <div class="work-section">
+        <div class="work-section" id="work-section">
             <div class="work-section-image">
               <img class="img" src="./images/image1.png" alt="product image of an athlete">
+            </div>
+            <div class="work-section-image2">
+              <img class="img2" src="./images/image2.png" alt="product image of an athlete">
             </div>
             <section class="work-section-texts">
               <h3 class="work-section-text1">Multi-Post Stories</h3>
@@ -93,8 +96,29 @@
         <!-- This is the Project section -->
         <section id="idproject-section">
           <div class="project-section">
-              <div class="project-section-img">
-                <h3>Professional Art Printing Data</h3>
+              <div id="project1" class="project-section-img">
+                <div class="no-display">
+                  <h3>Professional Art Printing Data</h3>
+                  <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
+                    industry's standard</p>
+                  <div class="shift">
+                    <button type="button" class="button">
+                      <span>Html</span>
+                    </button>
+                  
+                    <button type="button" class="button">
+                      <span class="big-span">Bootstrap</span>
+                    </button>
+                  
+                    <button type="button" class="button">
+                      <span>Ruby</span>
+                    </button>
+                  </div>
+                </div>
+                <button type="button" id="display" class="project-btn2">See Project</button>
+              </div>
+              <div class="mobile project-section-img1">
+                <h3 class="remove">Professional Art Printing Data</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
                 <div>
@@ -110,9 +134,30 @@
                     <span>Ruby</span>
                   </button>
                 </div>
+  
                 <button type="button" class="project-btn2">See Project</button>
               </div>
-              <div class="project-section-img1">
+              <div class="desktop project-section-img1">
+                <h3 class="remove">Data Dashboard Healthcare</h3>
+                <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
+                industry's standard</p>
+                <div class="btns">
+                  <button type="button" class="button">
+                    <span>Html</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span class="big-span">Bootstrap</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span>Ruby</span>
+                  </button>
+                </div>
+  
+                <!-- <button type="button" id="mobile2" class="project-btn2">See Project</button> -->
+              </div>
+              <div class="mobile project-section-img3">
                 <h3>Professional Art Printing Data</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
@@ -132,11 +177,11 @@
   
                 <button type="button" class="project-btn2">See Project</button>
               </div>
-              <div class="project-section-img3">
-                <h3>Professional Art Printing Data</h3>
+              <div class="desktop project-section-img3">
+                <h3><br> Website Portfolio</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
-                <div>
+                <div class="btns">
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
@@ -150,29 +195,9 @@
                   </button>
                 </div>
   
-                <button type="button" class="project-btn2">See Project</button>
+                <!-- <button type="button" class="project-btn2">See Project</button> -->
               </div>
-              <div class="project-section-img">
-                <h3>Professional Art Printing Data</h3>
-                <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
-                industry's standard</p>
-                <div>
-                  <button type="button" class="button">
-                    <span>Html</span>
-                  </button>
-                  
-                  <button type="button" class="button">
-                    <span class="big-span">Bootstrap</span>
-                  </button>
-                  
-                  <button type="button" class="button">
-                    <span>Ruby</span>
-                  </button>
-  
-                </div>
-                <button type="button" class="project-btn2">See Project</button>
-              </div>
-              <div class="project-section-img1">
+              <div class="mobile project-section-img">
                 <h3>Professional Art Printing Data</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
@@ -192,7 +217,67 @@
                 </div>
                 <button type="button" class="project-btn2">See Project</button>
               </div>
-              <div class="project-section-img3">
+              <div class="desktop project-section-img">
+                <h3>Professional Art Printing Data More</h3>
+                <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
+                industry's standard</p>
+                <div class="btns">
+                  <button type="button" class="button">
+                    <span>Html</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span class="big-span">Bootstrap</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span>Ruby</span>
+                  </button>
+  
+                </div>
+                <!-- <button type="button" class="project-btn2">See Project</button> -->
+              </div>
+              <div class="mobile project-section-img1">
+                <h3>Professional Art Printing Data</h3>
+                <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
+                industry's standard</p>
+                <div>
+                  <button type="button" class="button">
+                    <span>Html</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span class="big-span">Bootstrap</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span>Ruby</span>
+                  </button>
+  
+                </div>
+                <button type="button" class="project-btn2">See Project</button>
+              </div>
+              <div class="desktop project-section-img1">
+                <h3>Data Dashboard Healthcare</h3>
+                <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
+                industry's standard</p>
+                <div class="btns">
+                  <button type="button" class="button">
+                    <span>Html</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span class="big-span">Bootstrap</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span>Ruby</span>
+                  </button>
+  
+                </div>
+                <!-- <button type="button" class="project-btn2">See Project</button> -->
+              </div>
+              <div class="mobile project-section-img3">
                 <h3>Professional Art Printing Data</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
@@ -211,30 +296,54 @@
                 </div>
   
                 <button type="button" class="project-btn2">See Project</button>
+              </div>
+              <div class="desktop project-section-img3">
+                <h3><br> Website Portfolio</h3>
+                <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
+                industry's standard</p>
+                <div class="btns">
+                  <button type="button" class="button">
+                    <span>Html</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span class="big-span">Bootstrap</span>
+                  </button>
+                  
+                  <button type="button" class="button">
+                    <span>Ruby</span>
+                  </button>
+                </div>
+  
+                <!-- <button type="button" class="project-btn2">See Project</button> -->
               </div>
           </div>
         </section>
       </section>
 
       <section id="About" class="about-me">
-        <h2 class="about-me-text">About me</h2>
-        <p class="about-me-paragraph">Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience!
-          If you like what you see and have a project you need coded,
-          don’t hestiate to contact me.
-        </p>
-        <button type="button" class="project-btn1 about-btn">Get my Resume</button>
-      
+        <div class="about-heading">
+          <h2 class="about-me-text">About me</h2>
+          <p class="about-me-paragraph">Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience!
+            If you like what you see and have a project you need coded,
+            don’t hestiate to contact me.
+          </p>
+          <button type="button" class="project-btn1 about-btn">Get my Resume</button>
+
+        </div>      
         <div class="line1">
         </div>
       
         <div class="about-category">
       
           <div class="language">
-            <h2>
-              <span class="rotate"></span>
-              Languages
-            </h2>
+            <div>
+              <h2>
+                <span class="rotate"></span>
+                Languages
+              </h2>
+            </div>
             <ul>
               <li>Javascript</li>
               <li>Ruby</li>
@@ -274,27 +383,27 @@
       <form action="https://formspree.io/f/xeqnbeng" method="POST">
         <section class="contact">
           <div class="contact-text">
-            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in</h2>
+            <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</h2>
           </div>
-            <div><input type="text" name="name" id="fullname" placeholder="Full name" maxlength="30" required></div>
-            
-            <div><hr><input type="email" name="email" id="email" placeholder="Email address" required></div>
-            
-            <div class="div-form"><hr>
-              <textarea name="comments" 
-              id="text-area" 
-              cols="30"
-              rows="7"
-              maxlength="500"
-              placeholder="Enter text here"
-              required></textarea>
-            </div>
-            
-            <div>
-              <hr>
-              <button type="submit" id="contact-button" class="project-btn1">Get in touch</button>
-            </div>
-          <hr>
+          <div>
+              <div><input type="text" name="name" id="fullname" placeholder="First name" maxlength="30" required></div>
+              
+              <div>
+                <hr><input type="email" name="email" id="email" placeholder="Email address" required>
+              </div>
+              
+              <div class="div-form">
+                <hr>
+                <textarea name="comments" id="text-area" cols="30" rows="7" maxlength="500" placeholder="Enter text here" required></textarea>
+              </div>
+              
+              <div>
+                <button type="submit" id="contact-button" class="project-btn1">Get in touch</button>
+              </div>
+            <!-- <hr class="hr"> </hr> -->
+          </div>
+          <div><input type="text" name="name" id="full-name" placeholder="Last name" class="fullname" maxlength="30" required><hr></div>
+          
         </section>
       </form>
       
