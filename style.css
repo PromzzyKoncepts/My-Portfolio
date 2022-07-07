@@ -641,7 +641,7 @@ hr {
     display: none;
   }
 
-  /* i had errors eright here, corrected! */
+  /* i had errors eright here, corrected...*/
   .header-wrapper {
     background-image: url(./images/illustration-header.png);
     background-position: right top;
