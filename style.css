@@ -646,7 +646,7 @@ hr {
     background-image: url(images/Illustration-header.png);
     background-position: right top;
     background-repeat: no-repeat;
-    background-position-y: 3.5rem;
+    background-position-y: 4.5rem;
     background-size: 37%;
   }
 
@@ -662,6 +662,12 @@ hr {
     height: 40rem;
     background-color: #1c1a19;
     width: 50%;
+
+    /* margin-top: -90px; */
+  }
+
+  .header-text {
+    margin-block-start: 0;
   }
 
   .header-icons > ul {
@@ -669,7 +675,7 @@ hr {
     flex-direction: column;
     align-items: space-around;
     padding: 30px;
-    padding-top: 45vh;
+    padding-top: 30vh;
   }
 
   .header-icons,
@@ -825,6 +831,12 @@ hr {
 
   #display {
     margin-top: 374.5px;
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .header-icons2 > ul > li {
+    margin: 80px 0 10px -18px;
   }
 
   #project1 {
