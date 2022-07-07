@@ -144,10 +144,12 @@ button:disabled{
   display: flex;
   justify-content: center;
   padding-inline-start: 0;
+  align-items: center;
 }
 
 .header-icons ul li a {
   text-decoration: none;
+  gap: 0;
 }
 
 img:hover {
@@ -797,8 +799,9 @@ hr {
   .contact {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-top: 5rem;
+    margin-right: 2rem;
   }
 
   .contact-text {
@@ -809,6 +812,9 @@ hr {
 
   .fullname {
     display: flex;
+    width: 120%;
+    margin-right: 122px;
+      margin-top: 6.8px;
   }
 
   .hr {
@@ -816,7 +822,7 @@ hr {
   }
 
   .div-form {
-    width: 230%;
+    width: 248%;
   }
 
   #contact-button {
@@ -835,8 +841,12 @@ hr {
     font-size: 17px;
   }
 
+  .header-icons2 > ul {
+    width: 98.6%;
+  }
+
   .header-icons2 > ul > li {
-    margin: 80px 0 10px -18px;
+    margin: 80px 0 10px -14px;
   }
 
   #project1 {
@@ -860,5 +870,9 @@ hr {
 
   .btns {
     margin-left: -50px;
+  }
+
+  .contact .forn-div {
+    background-color: #091e42;
   }
 }
