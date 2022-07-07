@@ -609,6 +609,11 @@ hr {
   flex-direction: column;
 }
 
+.transition:hover::placeholder {
+  transform: translateX(10px);
+  transition: all 0.5s ease-out;
+}
+
 /* This area is for desktop */
 @media screen and (min-width: 786px) {
   body {
