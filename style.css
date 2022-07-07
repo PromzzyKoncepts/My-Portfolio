@@ -416,6 +416,7 @@ img:hover {
   border: none;
   margin-bottom: 0;
   transform: translateY(-33px);
+  transition: all 0.8s ease-out 8ms;
 }
 
 .project-btn2:hover {
@@ -448,7 +449,9 @@ img:hover {
   margin-top: 12px;
   color: white;
 }
-
+.transition:hover::placeholder{
+  transform: translateX(10px);
+}
 @media screen and (max-width: 786px) {
   .desktop {
     display: none;
