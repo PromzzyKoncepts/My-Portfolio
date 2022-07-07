@@ -449,6 +449,9 @@ img:hover {
   margin-top: 12px;
   color: white;
 }
+.transition:hover::placeholder{
+  transform: translateX(10px);
+}
 
 @media screen and (max-width: 786px) {
   .desktop {
