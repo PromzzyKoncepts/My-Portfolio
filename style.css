@@ -642,7 +642,7 @@ hr {
   }
 
   .header-wrapper {
-    background-image: url(./Images/illustration-header.png);
+    background-image: url(./images/illustration-header.png);
     background-position: right top;
     background-repeat: no-repeat;
     background-position-y: 3.5rem;
