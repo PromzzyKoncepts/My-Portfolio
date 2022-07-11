@@ -9,7 +9,7 @@
 
 ## Live Demo:
 
-[live demolink](https://promzzykoncepts.github.io/Template-2-Mobile-Version/)
+[live demo](https://promzzykoncepts.github.io/My-Portfolio/)
 Take a glance at the portfolio live demo to see a sample of the project
 
 ## Author
@@ -22,7 +22,7 @@ Take a glance at the portfolio live demo to see a sample of the project
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome [here](https://github.com/PromzzyKoncepts/My-Portfolio/issues/10)
 
 ## Show your support
 
