@@ -457,7 +457,7 @@ img:hover {
   transition: 1s;
   /* opacity: 0.65; */
 }
- 
+
   .nav-links{
     display: flex;
     flex-direction: column;
@@ -465,7 +465,7 @@ img:hover {
     flex-wrap: row wrap;
     width: 30%;
     align-items: left;
-    
+
   }
   .nav-links, ul li a{
     /* flex-direction: column; */
@@ -474,15 +474,15 @@ img:hover {
     text-decoration: none;
     font-size: 50px;
     /* flex-wrap: row wrap; */
-  
+
   }
   .mail{
     display: none;
   }
   .slide-in{
-    
+
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content:right;
     margin: 50px;
   }
