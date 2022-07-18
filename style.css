@@ -11,19 +11,6 @@ body {
   overflow-y: auto;
 }
 
-/* button{
-  background-color: #F55800;
-}
-button:hover{
-  background-color: #FFF5E1;
-}
-button:active{
-  background-color: #E05304;
-}
-button:disabled{
-  background-color: #F4F1F0;
-} */
-
 .icon {
   float: right;
   padding: 20px;
@@ -62,7 +49,7 @@ button:disabled{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 20px 24px;
+  /* padding: 20px 24px; */
   background: #3c3a39;
 }
 
@@ -453,6 +440,51 @@ img:hover {
 @media screen and (max-width: 786px) {
   .desktop {
     display: none;
+  }
+  .nav-menu{
+    background-color: #1c1a19;
+    height: 800px;
+    width: auto;
+    font-family: 'Inter', sans-serif;
+    position:absolute;
+    /* opacity: 0.9; */
+    margin: 0;
+    padding: 0;
+    left: -150%;
+  }
+.nav-menu.active {
+  left: 0;
+  transition: 1s;
+  /* opacity: 0.65; */
+}
+ 
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    flex-wrap: row wrap;
+    width: 30%;
+    align-items: left;
+    
+  }
+  .nav-links, ul li a{
+    /* flex-direction: column; */
+    list-style: none;
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 50px;
+    /* flex-wrap: row wrap; */
+  
+  }
+  .mail{
+    display: none;
+  }
+  .slide-in{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:right;
+    margin: 50px;
   }
 }
 
@@ -880,5 +912,8 @@ hr {
 
   .contact .forn-div {
     background-color: #091e42;
+  }
+  .slide-in{
+    display: none;
   }
 }
