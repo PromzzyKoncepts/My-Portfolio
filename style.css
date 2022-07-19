@@ -504,7 +504,7 @@ img:hover {
 
   .mobile-width {
     width: 70%;
-    height: 65%;
+    height: 90%;
     z-index: 2;
     padding: 0.5rem;
     background-color: #fff;
@@ -536,6 +536,7 @@ img:hover {
     border: 1px solid #6e6e6e;
     padding: 10px 15px;
     margin-right: 20px;
+    font-family: 'Inter', sans-serif;
   }
 
   .mobile-icon {
@@ -546,10 +547,11 @@ img:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5;
+    -webkit-line-clamp: 2;
     line-clamp: 2;
     -webkit-box-orient: vertical;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-family: 'Inter', sans-serif;
   }
 
   .mobile-btn {
@@ -558,6 +560,7 @@ img:hover {
     padding: 13px 30px;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
+    margin-bottom: 50px;
 
     /* margin-right: 10px; */
     background-image: url(./images/Vector.png);
@@ -573,6 +576,7 @@ img:hover {
     font-family: 'Inter', sans-serif;
     text-decoration: none;
     margin-right: 10px;
+    margin-bottom: 50px;
     background-image: url(./images/live.png);
     background-repeat: no-repeat;
     background-position: right;
