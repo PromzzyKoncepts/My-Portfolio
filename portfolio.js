@@ -20,10 +20,31 @@ const reset = () => {
 };
 window.addEventListener('resize', reset);
 
-// target you form inputs
+// FORM VALIDATION
 
-// write a function that checks the lowercase of the inputs
+const email = document.getElementById('email');
+const form = document.getElementById('formid');
+const errorMessage = document.getElementById('error');
+errorMessage.style.color = 'red';
+errorMessage.style.fontFamily = 'Inter, sans-serif';
+const userName = document.querySelector('name');
 
-// add validation for inputs and an error message
+function valid(input) {
+  if (input === input.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
 
-// add an event listener to your form
+const showError = (e) => {
+  if (!valid(email.value)) {
+    e.preventDefault();
+    errorMessage.textContent = 'Your Email must be lowercase';
+    setTimeout(() => {
+      errorMessage.textContent = '';
+    }, 3000);
+  }
+  email.value = '';
+  userName.value = '';
+};
+form.addEventListener('submit', showError);
