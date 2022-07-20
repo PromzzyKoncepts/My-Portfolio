@@ -25,7 +25,7 @@ window.addEventListener('resize', reset);
 const email = document.getElementById('email');
 const form = document.getElementById('formid');
 const errorMessage = document.getElementById('error');
-errorMessage.style.float="left";
+errorMessage.style.float = 'left';
 errorMessage.style.color = 'red';
 errorMessage.style.fontFamily = 'Inter, sans-serif';
 const userName = document.querySelector('name');
