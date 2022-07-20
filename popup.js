@@ -40,7 +40,7 @@ const popUps = [
   },
   {
     id: 'project-button4',
-    title: 'Professional Art Printing More',
+    title: 'Professional Art Printing Data More',
     image: './images/SnapshootPortfolio.png',
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown",
@@ -69,6 +69,13 @@ const popUps = [
     source_link: 'https://github.com/promzzykoncepts/my-Portfolio/',
   },
 ];
+function blurOut() {
+  const blur = document.querySelector('.wrapper');
+  blur.setAttribute('id', 'blur');
+}
+function removeBlur() {
+  document.querySelector('.wrapper').removeAttribute('id');
+}
 
 function popUpDiv(id) {
   // here i created the necessary divs and classes
@@ -81,7 +88,7 @@ function popUpDiv(id) {
   const divImage = document.createElement('img');
   const divTech = document.createElement('div');
   const divExitBtn = document.createElement('img');
-  divTitle.innerText = popUps[id].title;
+  divTitle.innerText = `${popUps[id].title}`;
   divTitle.classList.toggle('popup-title');
 
   divParagraph.innerText = `${popUps[id].description}`;
@@ -105,6 +112,7 @@ function popUpDiv(id) {
   function closed() {
     mainDiv.style.display = 'none';
     document.body.style.overflow = 'unset';
+    removeBlur();
   }
   divExitBtn.addEventListener('click', closed);
   mainDiv.classList.toggle('popup');
@@ -133,3 +141,4 @@ function popUpDiv(id) {
   document.body.appendChild(mainDiv);
 }
 popUpDiv();
+blurOut();

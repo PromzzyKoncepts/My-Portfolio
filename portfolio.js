@@ -19,3 +19,11 @@ const reset = () => {
   }
 };
 window.addEventListener('resize', reset);
+
+// target you form inputs
+
+// write a function that checks the lowercase of the inputs
+
+// add validation for inputs and an error message
+
+// add an event listener to your form
