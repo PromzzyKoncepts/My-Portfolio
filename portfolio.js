@@ -55,7 +55,7 @@ const userContent = {
   textArea: '',
 };
 
-form.addEventListener('toString', () => {
+form.addEventListener('change', () => {
   userContent.fullName = document.querySelector('#fullname').value;
   userContent.lastName = document.querySelector('#full-name').value;
   userContent.email = document.querySelector('#email').value;
