@@ -28,7 +28,6 @@ const errorMessage = document.getElementById('error');
 errorMessage.style.float = 'left';
 errorMessage.style.color = 'red';
 errorMessage.style.fontFamily = 'Inter, sans-serif';
-const userName = document.querySelector('name');
 function valid(input) {
   if (input === input.toLowerCase()) {
     return true;
@@ -45,7 +44,6 @@ const showError = (e) => {
     }, 3000);
   }
   email.value = '';
-  userName.value = '';
 };
 form.addEventListener('submit', showError);
 
@@ -66,7 +64,9 @@ form.addEventListener('toString', () => {
   localStorage.setItem('stored', JSON.stringify(userContent));
 });
 const storedObject = JSON.parse(localStorage.getItem('stored'));
-document.querySelector('#email').value = storedObject.email;
-document.querySelector('#fullname').value = storedObject.fullName;
-document.querySelector('#full-name').value = storedObject.lastName;
-document.querySelector('#text-area').value = storedObject.textArea;
+if (storedObject) {
+  document.querySelector('#email').value = storedObject.email;
+  document.querySelector('#fullname').value = storedObject.fullName;
+  document.querySelector('#full-name').value = storedObject.lastName;
+  document.querySelector('#text-area').value = storedObject.textArea;
+}
