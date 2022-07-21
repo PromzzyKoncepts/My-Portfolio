@@ -71,4 +71,4 @@ document.querySelector('#email').value = storedObject.email;
 document.querySelector('#fullname').value = storedObject.fullName;
 document.querySelector('#full-name').value = storedObject.lastName;
 document.querySelector('#text-area').value = storedObject.textArea;
-
+console.log("stored all the objects");
