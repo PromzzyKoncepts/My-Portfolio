@@ -11,59 +11,65 @@
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet"  type="text/css" href="style.css">
+  <script src="popup.js"></script>
 </head>
 
 <body>
   <!-- first-section -->
   <div class="wrapper">
-      <div class="header-wrapper">
-        <!-- navbar-section -->
-        <header class="header-section">
-          <span class="nav-span"><a href="#">Promise Okechukwu</a></span>
-          <span><a href="#"><img src="./images/Enabled.png" class="menubtn" alt="menu bar"></a></span>
-          <div class="nav-menu">
-            <div class="slide-in">
-              <img src="./images/Icon.png" alt="">
+      <div class="mobile-view">
+        <div class="header-wrapper">
+          <!-- navbar-section -->
+          <header class="header-section">
+            <span class="nav-span"><a href="#">Promise Okechukwu</a></span>
+            <span><a href="#"><img src="./images/Enabled.png" class="menubtn" alt="menu bar"></a></span>
+            <div class="nav-menu">
+              <div class="slide-in">
+                <img src="./images/Icon.png" alt="">
+              </div>
+              <ul class="nav-links">
+                <li>
+                  <span class="link"><a href="#Portfolio">Portfolio</a></span>
+                  <hr class="hr-nav">
+                  <span class="link"><a href="#About">About</a></span>
+                  <hr class="hr-nav">
+                  <span class="link"><a href="#Contact">Contact</a></span>
+                  <span><a href="#"><img src="images/Union.png" class="mail" alt="mail logo"></a></span>
+                </li>
+              </ul>
             </div>
-            <ul class="nav-links">
-              <li>
-                <span class="link"><a href="#Portfolio">Portfolio</a></span><hr class="hr-nav">
-                <span class="link"><a href="#About">About</a></span><hr class="hr-nav">
-                <span class="link"><a href="#Contact">Contact</a></span>
-                <span><a href="#"><img src="images/Union.png" class="mail" alt="mail logo"></a></span>
-              </li>
-            </ul>
-          </div>
-        </header>
-        <!-- header  section -->
-        <section id="first-section" class="first-section">
-          <div class="header-intro">
-            <h1 class="header-text">
-              Hey There. <br>
-              I’m Promise
-            </h1>
-            <h2 class="header-smaller-text"> I am a Software Developer </h2>
-            <p class="header-paragraph">
-              I can help you build a product,
-              feature or website Look through some of my work and experience!
-              If you like what you see and have a project you need coded,
-              don’t hestiate to contact me.
-            </p>
-          </div>
-          <!-- Icons section -->
-          <div class="header-icons">
-            <ul>
-              <li><a href="https://https://promzzykoncepts.github.io/Template-2-Mobile-Version//"><img src="images/github.png"
-                    alt="Github logo"></a></li>
-              <li><a href="https://www.linkedin.com/in/promiseokechukwu/"><img src="images/Linkedin-icon.svg"
-                    alt="Linkedin logo"></a></li>
-              <li><a href="https://www.github.com/promzzykoncepts"><img src="images/angel-list.svg" alt="Angelist logo"></a></li>
-              <li><a href="https://medium.com/promiseoechukwu/"><img src="images/medium.png" alt="Medium logo"></a></li>
-              <li><a href="https://twitter.com/promzzy/"><img src="images/twitter.svg" alt="Twitter logo"></a>
-              </li>
-            </ul>
-          </div>
-        </section>
+          </header>
+          <!-- header  section -->
+          <section id="first-section" class="first-section">
+            <div class="header-intro">
+              <h1 class="header-text">
+                Hey There. <br>
+                I’m Promise
+              </h1>
+              <h2 class="header-smaller-text"> I am a Software Developer </h2>
+              <p class="header-paragraph">
+                I can help you build a product,
+                feature or website Look through some of my work and experience!
+                If you like what you see and have a project you need coded,
+                don’t hestiate to contact me.
+              </p>
+            </div>
+            <!-- Icons section -->
+            <div class="header-icons">
+              <ul>
+                <li><a href="https://https://promzzykoncepts.github.io/Template-2-Mobile-Version//"><img src="images/github.png"
+                      alt="Github logo"></a></li>
+                <li><a href="https://www.linkedin.com/in/promiseokechukwu/"><img src="images/Linkedin-icon.svg"
+                      alt="Linkedin logo"></a></li>
+                <li><a href="https://www.github.com/promzzykoncepts"><img src="images/angel-list.svg" alt="Angelist logo"></a>
+                </li>
+                <li><a href="https://medium.com/promiseoechukwu/"><img src="images/medium.png" alt="Medium logo"></a></li>
+                <li><a href="https://twitter.com/promzzy/"><img src="images/twitter.svg" alt="Twitter logo"></a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
       </div>
       <!-- The Work section -->
       <section id="Portfolio" class="work-section">
@@ -95,7 +101,7 @@
                   <li class="btn">Ruby</li>
                 </ul>
               </div>
-              <button type="button" id="project-button1" class="project-btn1 project-btn">See Project</button>
+              <button type="button" id="project-button1" class="project-btn1 project-btn"  onclick="popUpDiv(0), blurOut()">See Project</button>
             </section>
         </div>
         <!-- This is the Project section -->
@@ -110,37 +116,37 @@
                     <button type="button" class="button">
                       <span>Html</span>
                     </button>
-                  
+
                     <button type="button" class="button">
                       <span class="big-span">Bootstrap</span>
                     </button>
-                  
+
                     <button type="button" class="button">
                       <span>Ruby</span>
                     </button>
                   </div>
                 </div>
-                <button type="button" id="display" class="project-btn2">See Project</button>
+                <button type="button" id="display" class="project-btn2" onclick="popUpDiv(1), blurOut()">See Project</button>
               </div>
               <div class="mobile project-section-img1">
-                <h3 class="remove">Professional Art Printing Data</h3>
+                <h3 class="remove">Data Dashboard Healthcare</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
                 <div>
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
                 </div>
-  
-                <button type="button" class="project-btn2">See Project</button>
+
+                <button type="button" class="project-btn2"  onclick="popUpDiv(2), blurOut()">See Project</button>
               </div>
               <div class="desktop project-section-img1">
                 <h3 class="remove">Data Dashboard Healthcare</h3>
@@ -150,37 +156,37 @@
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
                 </div>
-  
-                <!-- <button type="button" id="mobile2" class="project-btn2">See Project</button> -->
+
+                <button type="button" id="mobile2" class="project-btn2" onclick="popUpDiv(2), blurOut()">See Project</button>
               </div>
               <div class="mobile project-section-img3">
-                <h3>Professional Art Printing Data</h3>
+                <h3>Website Portfolio</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
                 <div>
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
                 </div>
-  
-                <button type="button" class="project-btn2">See Project</button>
+
+                <button type="button" class="project-btn2" onclick="popUpDiv(3), blurOut()">See Project</button>
               </div>
               <div class="desktop project-section-img3">
                 <h3><br> Website Portfolio</h3>
@@ -190,37 +196,37 @@
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
                 </div>
-  
-                <!-- <button type="button" class="project-btn2">See Project</button> -->
+
+                <button type="button" class="project-btn2" onclick="popUpDiv(3), blurOut()">See Project</button>
               </div>
               <div class="mobile project-section-img">
-                <h3>Professional Art Printing Data</h3>
+                <h3>Professional Art Printing Data More</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
                 <div>
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
-  
+
                 </div>
-                <button type="button" class="project-btn2">See Project</button>
+                <button type="button" class="project-btn2" onclick="popUpDiv(4), blurOut()">See Project</button>
               </div>
               <div class="desktop project-section-img">
                 <h3>Professional Art Printing Data More</h3>
@@ -230,37 +236,37 @@
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
-  
+
                 </div>
-                <!-- <button type="button" class="project-btn2">See Project</button> -->
+                <button type="button" class="project-btn2" onclick="popUpDiv(4), blurOut()">See Project</button>
               </div>
               <div class="mobile project-section-img1">
-                <h3>Professional Art Printing Data</h3>
+                <h3>Data Dashboard Healthcare</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
                 <div>
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
-  
+
                 </div>
-                <button type="button" class="project-btn2">See Project</button>
+                <button type="button" class="project-btn2" onclick="popUpDiv(5), blurOut()">See Project</button>
               </div>
               <div class="desktop project-section-img1">
                 <h3>Data Dashboard Healthcare</h3>
@@ -270,37 +276,37 @@
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
-  
+
                 </div>
-                <!-- <button type="button" class="project-btn2">See Project</button> -->
+                <button type="button" class="project-btn2" onclick="popUpDiv(5), blurOut()">See Project</button>
               </div>
               <div class="mobile project-section-img3">
-                <h3>Professional Art Printing Data</h3>
+                <h3>Website Porfolio</h3>
                 <p class="paragraph">A daily selection of privately personalized reads no accounts or sign-ups required has been the
                 industry's standard</p>
                 <div>
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
                 </div>
-  
-                <button type="button" class="project-btn2">See Project</button>
+
+                <button type="button" class="project-btn2" onclick="popUpDiv(6), blurOut()">See Project</button>
               </div>
               <div class="desktop project-section-img3">
                 <h3><br> Website Portfolio</h3>
@@ -310,17 +316,17 @@
                   <button type="button" class="button">
                     <span>Html</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span class="big-span">Bootstrap</span>
                   </button>
-                  
+
                   <button type="button" class="button">
                     <span>Ruby</span>
                   </button>
                 </div>
-  
-                <!-- <button type="button" class="project-btn2">See Project</button> -->
+
+                <button type="button" class="project-btn2" onclick="popUpDiv(6), blurOut()">See Project</button>
               </div>
           </div>
         </section>
@@ -336,12 +342,12 @@
           </p>
           <button type="button" class="project-btn1 about-btn">Get my Resume</button>
 
-        </div>      
+        </div>
         <div class="line1">
         </div>
-      
+
         <div class="about-category">
-      
+
           <div class="language">
             <div>
               <h2>
@@ -356,7 +362,7 @@
               <li>Css</li>
             </ul>
           </div>
-      
+
           <div class="frameworks">
             <h2>
               <span class="square"></span>
@@ -370,7 +376,7 @@
               <li>Selenium</li>
             </ul>
           </div>
-      
+
           <div class="skills">
             <h2>
               <span class="circle"></span>Skills
@@ -385,33 +391,31 @@
           </div>
         </div>
       </section>
-      <form action="https://formspree.io/f/xeqnbeng" method="POST">
+      <form action="https://formspree.io/f/xeqnbeng" method="POST" id="formid">
         <section id="Contact" class="contact">
           <div class="contact-text">
             <h2>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch</h2>
           </div>
           <div class="form-div">
               <div><input class="transition" type="text" name="name" id="fullname" placeholder="First name" maxlength="30" required></div>
-              
               <div>
                 <hr><input class="transition" type="email" name="email" id="email" placeholder="Email address" required>
               </div>
-              
               <div class="div-form">
                 <hr>
                 <textarea class="transition" name="comments" id="text-area" cols="30" rows="7" maxlength="500" placeholder="Enter text here" required></textarea>
               </div>
-              
               <div>
                 <button type="submit" id="contact-button" class="project-btn1">Get in touch</button>
+                <small id="error"></small>
               </div>
-            
+
           </div>
           <div><input type="text" name="name" id="full-name" placeholder="Last name" class="fullname transition" maxlength="30" required><hr></div>
-          
+
         </section>
       </form>
-      
+
       <footer class="header-icons2">
         <ul>
           <li><a href="https://https://promzzykoncepts.github.io/Template-2-Mobile-Version//"><img src="images/github.png"
@@ -424,7 +428,8 @@
           </li>
         </ul>
       </footer>
-      
+
   </div>
   <script src="portfolio.js"></script>
+  <script src="popupmain.js"></script>
 </body>
