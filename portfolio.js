@@ -35,6 +35,7 @@ function valid(input) {
   return false;
 }
 
+// function for errorMessage
 const showError = (e) => {
   if (!valid(email.value)) {
     e.preventDefault();
